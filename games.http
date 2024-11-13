@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+GET http://localhost:5078/games
+
+###
+GET http://localhost:5078/games/c46131cc-8fce-4612-8fdf-49735f826eaf
+###
+POST http://localhost:5078/games
+Content-Type: application/json
+
+{
+  "name": "Mortal Kombat IV",
+  "genreId": "86E0D229-511F-41B5-90D5-347A628713E4",
+  "price": 26.99,
+  "releaseDate":"2020-11-18"
+}
+
+
+###
+PUT http://localhost:5078/games/93EBD82A-72A7-4713-8E00-0D64942D0148
+Content-Type: application/json
+
+{
+    "name": "Street figther III Testing",
+    "genreId": "86E0D229-511F-41B5-90D5-347A628713E4",
+    "price": 49.99,
+    "releaseDate": "1992-07-15"
+  }
+
+###
+DELETE http://localhost:5078/games/d5ff5a9e-e42a-420f-9f52-bf34ce6c7779
